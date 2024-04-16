@@ -1,0 +1,132 @@
+.testimonials-section {
+   
+    /* text-align: center; */
+    padding: 50px 0;
+}
+.testimonials-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.testimonials-top h3 {
+    font-size: 15px; /* Increase font size */
+    color: #32b0ce; /* Change color to blue */
+    
+}
+
+.testimonials-top h1 {
+    margin-bottom: 30px; /* Increase margin bottom */
+    font-size: 36px; /* Increase font size */
+    color: white;
+}
+
+.stars {
+    color: gold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex; /* Display stars in a column */
+    /* flex-direction: column; Display stars in a column */
+    align-items: center; /* Center stars horizontally */
+}
+
+.dots {
+    margin-top: 20px; /* Increase top margin */
+}
+
+.slider {
+    width: 100%; /* Adjust width to fit the screen */
+    height: 20rem;
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+}
+
+.slide-upper {
+    position: absolute;
+    border: 2px solid #32b0ce;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease; /* Add transition for smooth sliding */
+}
+
+.slide-upper:not(:first-child) {
+    transform: translateX(100%);
+}
+
+.slide-img {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.slide-img img {
+    width: 100px;
+    height: 100px; /* Adjust height */
+    border-radius: 10px; /* Add border-radius for rectangle shape */
+    background-color: blue; /* Set card color to blue */
+}
+
+.slide-text {
+    flex: 1;
+}
+
+.slide-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: blue; /* Change heading color to blue */
+}
+
+.slide-text p {
+    width: 50rem;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: red; /* Change paragraph color to red */
+}
+
+.controls {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add padding to space controls from sides */
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+    font-size: 24px;
+    cursor: pointer;
+    color: #32b0ce; /* Change arrow color */
+    
+
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px; /* Position dots below the cards */
+    width: 100%;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #555;
+}
+
