@@ -780,3 +780,192 @@ textarea{
 }
 /* End of  Footer */
 /* End of Container */
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+    .menu-icon {
+        right: 10%;
+    }
+    .menu-icon .line,
+    .menu-icon .line-1,
+    .menu-icon .line-2,
+    .menu-icon .line-3 {
+        width: 3rem;
+    }
+    .nav-items a {
+        font-size: 1.5rem;
+    }
+    .logo {
+        left: 10%;
+    }
+    .banner h3 {
+        font-size: 4.5rem;
+    }
+    .banner h1 {
+        font-size: 9rem;
+    }
+    .banner h1 span {
+        font-size: 12rem;
+    }
+    .page-header .section-heading-sm {
+        margin-top: 10rem;
+    }
+    .books {
+        padding: 5rem 0 10rem 0;
+    }
+    .book {
+        width: 30rem;
+    }
+    .book img {
+        width: 25rem;
+        height: 25rem;
+    }
+    .book-name {
+        font-size: 1.2rem;
+    }
+    .feedback {
+        height: 50%;
+    }
+    .feedback-heading h1 {
+        font-size: 5rem;
+    }
+    .feedback-heading h1 span {
+        font-size: 6rem;
+    }
+    .feedback-body p {
+        width: 40rem;
+    }
+    .quote {
+        width: 55rem;
+    }
+    .quote-header h1 {
+        padding: 0 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        right: 5%;
+    }
+    .menu-icon .line,
+    .menu-icon .line-1,
+    .menu-icon .line-2,
+    .menu-icon .line-3 {
+        width: 2.5rem;
+    }
+    .nav-items a {
+        font-size: 1.2rem;
+    }
+    .logo {
+        left: 5%;
+    }
+    .banner h3 {
+        font-size: 3.5rem;
+    }
+    .banner h1 {
+        font-size: 7rem;
+    }
+    .banner h1 span {
+        font-size: 10rem;
+    }
+    .page-header .section-heading-sm {
+        margin-top: 5rem;
+    }
+    .books {
+        padding: 3rem 0 7rem 0;
+    }
+    .book {
+        width: 25rem;
+    }
+    .book img {
+        width: 20rem;
+        height: 20rem;
+    }
+    .book-name {
+        font-size: 1rem;
+    }
+    .feedback {
+        height: 60%;
+    }
+    .feedback-heading h1 {
+        font-size: 4rem;
+    }
+    .feedback-heading h1 span {
+        font-size: 5rem;
+    }
+    .feedback-body p {
+        width: 30rem;
+    }
+    .quote {
+        width: 45rem;
+    }
+    .quote-header h1 {
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .menu-icon {
+        right: 3%;
+    }
+    .menu-icon .line,
+    .menu-icon .line-1,
+    .menu-icon .line-2,
+    .menu-icon .line-3 {
+        width: 2rem;
+    }
+    .nav-items a {
+        font-size: 1rem;
+    }
+    .logo {
+        left: 3%;
+    }
+    .banner h3 {
+        font-size: 3rem;
+    }
+    .banner h1 {
+        font-size: 5rem;
+    }
+    .banner h1 span {
+        font-size: 8rem;
+    }
+    .page-header .section-heading-sm {
+        margin-top: 3rem;
+    }
+    .books {
+        padding: 2rem 0 5rem 0;
+    }
+    .book {
+        width: 20rem;
+    }
+    .book img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .book-name {
+        font-size: 0.8rem;
+    }
+    .feedback-heading h1 {
+        font-size: 3rem;
+    }
+    .feedback-heading h1 span {
+        font-size: 4rem;
+    }
+    .feedback-body p {
+        width: 20rem;
+    }
+    .quote {
+        width: 35rem;
+    }
+    .quote-header h1 {
+        padding: 0 2rem;
+    }
+}
+
+
+/* End of Media Queries */
