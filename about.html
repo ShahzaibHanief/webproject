@@ -33,7 +33,7 @@
                     <a href="about.html"><span>01.</span>About</a>
                     <a href="books.html"><span>02.</span>Books</a>
                     <a href="testimonials.html"><span>03.</span>Testimonials</a>
-                    <a href="#contact"><span>04.</span>Contact</a>
+                    <a href="contact.html"><span>04.</span>Contact</a>
                 </div>
             </div>
          </nav>
@@ -165,14 +165,14 @@
                     </div>
                 </div>
                 <div class="footer-form">
-                    <form >
+                    <form action="/contact" method="post" >
                         <div class="input-group">
-                            <input type="text" placeholder="Name">
-                            <input type="email" placeholder="Email">
-                            <input type="text" placeholder="PHONE">
-                            <input type="text" placeholder="ADDRESS">
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="email" name="email" placeholder="Email">
+                            <input type="text" name="phone_number" placeholder="PHONE">
+                            <input type="text" name="address" placeholder="ADDRESS">
                         </div>
-                        <textarea placeholder="Message"></textarea>
+                        <textarea name="message" placeholder="Message"></textarea>
                         <button type="button">DONE</button>
                     </form>
                 </div>
