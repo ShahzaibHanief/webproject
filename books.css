@@ -22,3 +22,20 @@
     flex-wrap: wrap;
 }
 /* End of Books Section */
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .books-section .books-list {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .books-section .books-list {
+        width: 100%;
+    }
+}
+
+/*End of  Media Queries */
