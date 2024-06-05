@@ -26,107 +26,189 @@
 .stars {
     color: gold;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     display: flex; /* Display stars in a column */
     /* flex-direction: column; Display stars in a column */
     align-items: center; /* Center stars horizontally */
 }
-
-.dots {
-    margin-top: 20px; /* Increase top margin */
+/* slide section */
+.slider{
+    margin-top: 20px;
 }
 
-.slider {
-    width: 100%; /* Adjust width to fit the screen */
-    height: 20rem;
-    position: relative;
-    overflow: hidden; /* Hide overflow */
-}
-
+/* Card container */
 .slide-upper {
-    position: absolute;
-    border: 2px solid #32b0ce;
-    width: 50%;
-    height: 100%;
+    width: 40%;
+    height: 200px;
+    margin: 0 auto; /* Center the card */
+    background-color: #32b0ce; /* Light gray background */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
     display: flex;
     align-items: center;
-    justify-content: center;
-    transition: transform 0.5s ease; /* Add transition for smooth sliding */
+    padding: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+
+    animation: slideIn 0.5s ease forwards; /* Apply the animation */
+    animation: slideInY 0.5s ease forwards;
+}
+/* .slide-upper.active {
+    display: flex;
+    opacity: 1;
+} */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInY {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-.slide-upper:not(:first-child) {
-    transform: translateX(100%);
+/* Card content */
+.slide-content {
+     /* Adjust as needed */
+     width: 120%;
+     height: 180%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    margin:10px ;
 }
-
-.slide-img {
-    flex: 0 0 auto;
-    margin-right: 20px;
+.slide-img{
+    width: 50%;
 }
-
+/* Card image */
 .slide-img img {
-    width: 100px;
-    height: 100px; /* Adjust height */
-    border-radius: 10px; /* Add border-radius for rectangle shape */
-    background-color: blue; /* Set card color to blue */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    max-height: 100%; /* Ensure image doesn't exceed container height */
+    border-radius: 10px; /* Rounded corners for image */
 }
 
+/* Right side content */
 .slide-text {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Adjust as needed */
+    padding: 10px; /* Add space between image and text */
+    margin-left: 10px;
+    /* background-color: red; */
 }
 
+/* Card heading */
 .slide-text h3 {
+    margin: 7px 0;
     font-size: 24px;
-    margin-bottom: 10px;
-    color: blue; /* Change heading color to blue */
+    color: #32b0ce; /* Dark text color */
 }
 
+/* Card text */
 .slide-text p {
-    width: 50rem;
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 10px;
-    color: red; /* Change paragraph color to red */
+    margin: 6px 0;
+    color: #fff; /* Gray text color */
 }
 
-.controls {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px; /* Add padding to space controls from sides */
+/* Client info */
+.client {
+    font-size: 14px;
+    color: #999; /* Lighter gray text color */
+    margin-top: 10px;
 }
 
-.fa-arrow-left,
-.fa-arrow-right {
-    font-size: 24px;
-    cursor: pointer;
-    color: #32b0ce; /* Change arrow color */
-    
-
+/* Hover effect */
+.slide-upper:hover {
+    transform: translateY(-5px); /* Move card slightly up on hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
-
-.dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.second_slide{
+    display: none;
     position: absolute;
-    bottom: 10px; /* Position dots below the cards */
-    width: 100%;
+    left: -10%;
+    top: 107%;
+    margin-bottom: -30px;
+    animation: slideIn 0.5s ease backwards;
+    animation: slideInY 0.5s ease backwards;
 }
-
-.dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
+.third_slide{
+    display: none;
+    position: absolute;
+    left: -50%;
+    top: 107%;
+    margin-bottom: -30px;
+    animation: slideIn 0.5s ease backwards;
+    animation: slideInY 0.5s ease backwards;
+}
+.fourth_slide{
+    display: none;
+    position: absolute;
+    left: -90%;
+    top: 107%;
+    margin-bottom: -30px;
+    animation: slideIn 0.5s ease backwards;
+    animation: slideInY 0.5s ease backwards;
+}
+.fifth_slide{
+    display: none;
+    position: absolute;
+    left: -130%;
+    top: 107%;
+    margin-bottom: -30px;
+    animation: slideIn 0.5s ease backwards;
+    animation: slideInY 0.5s ease backwards;
+}
+.arrow {
+    position: absolute;
+    top: 120%;
+    /* transform: translateY(-80%); */
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
     cursor: pointer;
 }
 
-.dot.active {
-    background-color: #555;
+.left-arrow {
+    left: 10px;
 }
 
+.right-arrow {
+    right: 10px;
+}
+/* end of slide section */
+
+
+
+
+
+/* start responsive */
+
+
+@media screen and (max-width: 768px) {
+    .slide-upper {
+        width: 70%; /* Adjust width for medium devices */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slide-upper {
+        width: 90%; /* Adjust width for small devices */
+    }
+}
+/* end of responsive */
